@@ -1,90 +1,107 @@
-<html><body>
-    <h1>EXPERIMENT NO. 1</h1>
-    <h2>Object:</h2>
-    <p>Determination of Tensile Strength and Elongation at break of film sample.</p>
-    <h3>Equipment</h3>
-    <ul>
-        <li>Tensile testing Machine or UTM</li>
-        <li>Thickness Gauge</li>
-        <li>Vernier callipers</li>
+<html>
 
-    </ul>
+<body>
+  <h1>EXPERIMENT NO. 1</h1>
+  <h2>Object:</h2>
+  <p>Determination of Tensile Strength and Elongation at break of film sample.</p>
+  <h3>Equipment</h3>
+  <ul>
+    <li>Tensile testing Machine or UTM</li>
+    <li>Thickness Gauge</li>
+    <li>Vernier callipers</li>
 
-    <h3>Significance:</h3>
-    <p>The tensile modulus of elasticity is an index of the stiffness of plastic films and can be used to compare the
-        stiffness of different materials. The tensile energy to break (TEB) is the total energy absorbed per unit volume
-        of the specimen up to the point of rupture and can be considered as a measure of toughness. Ultimate elongation
-        values of several hundred percent are common for polymer films. The rate of strain, specimen parameters, and
-        especially flaws may cause large variations in the results. In that sense, caution is advised in utilizing TEB
-        test results for end-use design applications</p>
-    <h3>Procedure:</h3>
-    <ul>
-        <li>Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples are cut in length wise and cross
-            wise direction of film. 5 samples in each direction are taken.</li>
-        <li>Each sample is inspected and with the help of thickness gauge the thickness is measured at various points
-            and average thickness is considered.</li>
-        <li>Samples are placed and fixed at upper jaws of tensile machine and movable jaws are moved up to fix the lower
-            end of film</li>
-        <li>Initial length L0 of film between the jaws is measured with the help of Vernier calipers </li>
-        <li>The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.</li>
-        <li>At the breaking of sample, the reading of load in Kgf noted and final length L1 between the jaws is measured
-            with the help of Vernier calipers.</li>
+  </ul>
 
-    </ul>
+  <h3>Significance:</h3>
+  <p>The tensile modulus of elasticity is an index of the stiffness of plastic films and can be used to compare the
+    stiffness of different materials. The tensile energy to break (TEB) is the total energy absorbed per unit volume
+    of the specimen up to the point of rupture and can be considered as a measure of toughness. Ultimate elongation
+    values of several hundred percent are common for polymer films. The rate of strain, specimen parameters, and
+    especially flaws may cause large variations in the results. In that sense, caution is advised in utilizing TEB
+    test results for end-use design applications</p>
+  <h3>Procedure:</h3>
+  <ul>
+    <li>Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples are cut in length wise and cross
+      wise direction of film. 5 samples in each direction are taken.</li>
+    <li>Each sample is inspected and with the help of thickness gauge the thickness is measured at various points
+      and average thickness is considered.</li>
+    <li>Samples are placed and fixed at upper jaws of tensile machine and movable jaws are moved up to fix the lower
+      end of film</li>
+    <li>Initial length L0 of film between the jaws is measured with the help of Vernier calipers </li>
+    <li>The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.</li>
+    <li>At the breaking of sample, the reading of load in Kgf noted and final length L1 between the jaws is measured
+      with the help of Vernier calipers.</li>
 
-    <h3> Calculations: </h3>
-    <p>The following formulae are used for calculation of tensile strength and % elongation:-</p>
-    <p>Tensile Strength ( Kgf/cm<sup>2</sup> ) = W / ( b x t )</p>
-    <p>W = Load in Kgf.<br>
-        B = Width in cm.<br>
-        T = Thickness in cm<br>
-    </p>
-    <p>% Elongation = [ (L<sub>1</sub> - L<sub>0</sub>)/ L<sub>0</sub>] x 100.</p>
-    <p>
-        L<sub>0</sub> = Initial length of film between the grips in cm.<br>
-        L<sub>1</sub> =Final length of film between the grips in cm.<br>
+  </ul>
+
+  <h3> Calculations: </h3>
+  <p>The following formulae are used for calculation of tensile strength and % elongation:-</p>
+  <p>Tensile Strength ( Kgf/cm<sup>2</sup> ) = W / ( b x t )</p>
+  <p>W = Load in Kgf.<br>
+    B = Width in cm.<br>
+    T = Thickness in cm<br>
+  </p>
+  <p>% Elongation = [ (L<sub>1</sub> - L<sub>0</sub>)/ L<sub>0</sub>] x 100.</p>
+  <p>
+    L<sub>0</sub> = Initial length of film between the grips in cm.<br>
+    L<sub>1</sub> =Final length of film between the grips in cm.<br>
 
 
-    </p>
-    <h3>Results:</h3>
-    <p>The Tensile Strength of film sample is ------------- Kgf/cm<sup>2</sup> and Elongation at break of film sample is
-        -----------%</p>
+  </p>
+  <h3>Results:</h3>
+  <p>The Tensile Strength of film sample is ------------- Kgf/cm<sup>2</sup> and Elongation at break of film sample is
+    -----------%</p>
 
-        <h2> Live demo</h2>
-       
-        <h3> tensile strength</h3>
-        <form>
-       
-        <input type="number" name="w" placeholder="Load in Kgf.">/ (
-       
-        <input  type="number"name="b" placeholder="Width in cm."> *
-       
-        <input type="number" name="t" placeholder="Thickness in cm"> ) <br>
-        <br>
-        
-        <button type="button" onclick="answer.value=( (parseFloat(w.value)) / ( (parseFloat(b.value)) *(parseFloat(t.value)) )
-            );
-        answer2.value=answer.value;
-        nb.value=tnb.value;">Calculate</button><br>
-        <strong> <output name="answer">----</output></strong> Kgf/cm<sup>2</sup> <br> 
-       
-   
-        </form><br>
-        <h3>Elongation</h3>
-        <p id="result"></p>
-         L<sup>0</sup> : <input type="number" id="L0" placeholder="Initial length of film between the grips in cm."><br>
-         L<sup>1</sup> : <input type="number" id="L1" placeholder="Final length of film between the grips in cm."><br>
-         <button onclick="calculate()">Calculate</button>
-         <script>
-             function calculate()
-             {
-                 var l0 =document.getElementById("L0").value;
-                 var l1 =document.getElementById("L1").value;
-                 var result = ((parseFloat(l1)-parseFloat(l0)) / parseFloat(l0))*100;
-                 if(!isNaN(result)){
-                     document.getElementById("result").innerHTML="Elongation at break of film sample is "+result + " %"
-                 }
-             }
-         </script>
+  <h2> Live Lab</h2>
+
+  <h3>==> Calculate tensile strength</h3>
+
+  <form #f="ngForm" (ngSubmit)="calcTS()" novalidate>
+    <div class="form-group row">
+      <label for="w" class="col-sm-2 col-form-label">Load in kgf.</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="w" [(ngModel)]="data.w" name="w" #w="ngModel" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="b" class="col-sm-2 col-form-label">Width in cm.</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="b" [(ngModel)]="data.b" name="b" #b="ngModel" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="t" class="col-sm-2 col-form-label">Thichness in cm.</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="t" [(ngModel)]="data.t" name="t" #t="ngModel" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </form>
+  <h3>==> Calcultae elongation</h3>
+
+  <form #f2="ngForm" (ngSubmit)="calcEle()" novalidate>
+    <div class="form-group row">
+      <label for="l0" class="col-sm-2 col-form-label">Initial length of film between the grips in cm.</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="l0" [(ngModel)]="data.l0" name="l0" #l0="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="l1" class="col-sm-2 col-form-label">Final length of film between the grips in cm.</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="l1" [(ngModel)]="data.l1" name="l1" #l1="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </form>
 </body>
+
 </html>
