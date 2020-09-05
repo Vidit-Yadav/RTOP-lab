@@ -1,4 +1,5 @@
-<body>
+<html>
+    <body>
     <h1>EXPERIMENT NO. 3</h1>
     <h2>Object:</h2>
     <p>Determination of Tensile Strength and % elongation of plastic specimen of dumbbell</p>
@@ -54,4 +55,44 @@
     <p>The Tensile Strength of polymer sample is ------------- Kgf/cm<sup>2</sup> and Elongation at break is
         -----------%</p>
 
-</body>
+        <h2> Live demo</h2>
+       
+        <h3> tensile strength</h3>
+        <form>
+       
+        <input type="number" name="w" placeholder="Load in Kgf.">/ (
+       
+        <input  type="number"name="b" placeholder="Width in cm."> *
+       
+        <input type="number" name="t" placeholder="Thickness in cm"> ) <br>
+        <br>
+        
+        <button type="button" onclick="answer.value=( (parseFloat(w.value)) / ( (parseFloat(b.value)) *(parseFloat(t.value)) )
+            );
+        answer2.value=answer.value;
+        nb.value=tnb.value;">Calculate</button><br>
+        <strong> <output name="answer">----</output></strong> Kgf/cm<sup>2</sup> <br> 
+       
+   
+        </form><br>
+        <h3>Elongation</h3>
+        <p id="result"></p>
+         L<sup>0</sup> : <input type="number" id="L0" placeholder="Initial length of film between the grips in cm."><br>
+         L<sup>1</sup> : <input type="number" id="L1" placeholder="Final length of film between the grips in cm."><br>
+         <button onclick="calculate()">Calculate</button>
+         <script>
+             function calculate()
+             {
+                 var l0 =document.getElementById("L0").value;
+                 var l1 =document.getElementById("L1").value;
+                 var result = ((parseFloat(l1)-parseFloat(l0)) / parseFloat(l0))*100;
+                 if(!isNaN(result)){
+                     document.getElementById("result").innerHTML="Elongation at break of film sample is "+result + " %"
+                 }
+             }
+         </script>
+
+
+
+
+</body></html>
