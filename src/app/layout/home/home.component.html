@@ -1,68 +1,86 @@
-<h1>TPL-303 : RHEOLOGY AND TESTING OF POLYMERS LAB</h1>
+<div *ngIf="navService.index == 1" class="body">
+    <div class="col">
+        <div class="row">
+            <h1 class="title">RHEOLOGY AND TESTING OF POLYMERS LAB</h1>
+        </div>
+    </div>
 
-<div>
+    <div>
 
-    <table class="table table-striped" >
-        <thead class="thead-dark">
-            <th>
-                #
-            </th>
-            <th>
-                Name of Experiment
-            </th>
-        </thead>
-        <tbody>
-            <tr class="tb-row" routerLink="exp1">
-                <th class="scope">1</th>
-                <td>Determination of Tensile Strength and Percent Elongation of polymer film/sheet.</td>
-            </tr>
-        
-            <tr class="tb-row" routerLink="exp2">
-                <th class="scope">2</th>
-                <td>Determination of the Vicat Softening point of given plastic sample on Vicat Softening Point apparatus.</td>
-            </tr>
-            
-            <tr class="tb-row" routerLink="exp3">
-                <th class="scope">3</th>
-                <td>Determination of Tensile strength, Modulus and Percent Elongation of moulded plastic test specimen on
-                    Microprocessor Controlled Universal Testing Machine (U.T.M).</td>
-            </tr>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <th>
+                    #
+                </th>
+                <th>
+                    Name of Experiment
+                </th>
+            </thead>
+            <tbody>
+                <tr class="tb-row" routerLink="exp1">
+                    <td class="scope" style="background-color: darkgray;">1</td>
+                    <td>Determination of Tensile Strength and Percent Elongation of polymer film/sheet.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp4">
-                <th class="scope">4</th>
-                <td>Determination of the Izod/Charpy Impact Strength of given specimen.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp2">
+                    <td class="scope" style="background-color: darkgray;">2</td>
+                    <td>Determination of the Vicat Softening point of given plastic sample on Vicat Softening Point
+                        apparatus.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp5">
-                <th class="scope">5</th>
-                <td>Determination of the Melt Flow Index of polymer raw material by MFI tester.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp3">
+                    <td class="scope" style="background-color: darkgray;">3</td>
+                    <td>Determination of Tensile strength, Modulus and Percent Elongation of moulded plastic test
+                        specimen on
+                        Microprocessor Controlled Universal Testing Machine (U.T.M).</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp6">
-                <th class="scope">6</th>
-                <td>Determination of the Shore A Hardness of Rubber Sheet.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp4">
+                    <td class="scope" style="background-color: darkgray;">4</td>
+                    <td>Determination of the Izod/Charpy Impact Strength of given specimen.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp7">
-                <th class="scope">7</th>
-                <td>Determination of the Percent Water Absorption in 24 hours of Moulding Plastic samples.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp5">
+                    <td class="scope" style="background-color: darkgray;">5</td>
+                    <td>Determination of the Melt Flow Index of polymer raw material by MFI tester.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp8">
-                <th class="scope">8</th>
-                <td>Determination of the Falling Dart Impact Strength of polyethylene film using Falling Dart Impact Tester.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp6">
+                    <td class="scope" style="background-color: darkgray;">6</td>
+                    <td>Determination of the Shore A Hardness of Rubber Sheet.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp9">
-                <th class="scope">9</th>
-                <td>Determination of viscosity of polymer by Brookefield viscometer.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp7">
+                    <td class="scope" style="background-color: darkgray;">7</td>
+                    <td>Determination of the Percent Water Absorption in 24 hours of Moulding Plastic samples.</td>
+                </tr>
 
-            <tr class="tb-row" routerLink="exp10">
-                <th class="scope">10</th>
-                <td>Determination of polymer yield by microwave synthesizer.</td>
-            </tr>
+                <tr class="tb-row" routerLink="exp8">
+                    <td class="scope" style="background-color: darkgray;">8</td>
+                    <td>Determination of the Falling Dart Impact Strength of polyethylene film using Falling Dart Impact
+                        Tester.</td>
+                </tr>
 
-        </tbody>
-    </table>
+                <tr class="tb-row" routerLink="exp9">
+                    <td class="scope" style="background-color: darkgray;">9</td>
+                    <td>Determination of viscosity of polymer by Brookefield viscometer.</td>
+                </tr>
+
+                <tr class="tb-row" routerLink="exp10">
+                    <td class="scope" style="background-color: darkgray;">10</td>
+                    <td>Determination of polymer yield by microwave synthesizer.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="navService.index == 2">
+    <p>ABOUT</p>
+</div>
+
+
+<div *ngIf="navService.index == 3">
+    <p>TEAM</p>
 </div>

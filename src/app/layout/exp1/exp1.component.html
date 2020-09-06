@@ -1,10 +1,8 @@
-<html>
-
-<body>
-  <h1>EXPERIMENT NO. 1</h1>
-  <h2>Object:</h2>
+<div class="body">
+  <h1 class="title"><strong>EXPERIMENT NO. 1</strong></h1>
+  <h3><strong>Object:</strong></h3>
   <p>Determination of Tensile Strength and Elongation at break of film sample.</p>
-  <h3>Equipment</h3>
+  <h3><strong>Equipment</strong></h3>
   <ul>
     <li>Tensile testing Machine or UTM</li>
     <li>Thickness Gauge</li>
@@ -12,14 +10,14 @@
 
   </ul>
 
-  <h3>Significance:</h3>
+  <h3><strong>Significance:</strong></h3>
   <p>The tensile modulus of elasticity is an index of the stiffness of plastic films and can be used to compare the
     stiffness of different materials. The tensile energy to break (TEB) is the total energy absorbed per unit volume
     of the specimen up to the point of rupture and can be considered as a measure of toughness. Ultimate elongation
     values of several hundred percent are common for polymer films. The rate of strain, specimen parameters, and
     especially flaws may cause large variations in the results. In that sense, caution is advised in utilizing TEB
     test results for end-use design applications</p>
-  <h3>Procedure:</h3>
+  <h3><strong>Procedure:</strong></h3>
   <ul>
     <li>Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples are cut in length wise and cross
       wise direction of film. 5 samples in each direction are taken.</li>
@@ -34,7 +32,7 @@
 
   </ul>
 
-  <h3> Calculations: </h3>
+  <h3><strong>Calculations:</strong></h3>
   <p>The following formulae are used for calculation of tensile strength and % elongation:-</p>
   <p>Tensile Strength ( Kgf/cm<sup>2</sup> ) = W / ( b x t )</p>
   <p>W = Load in Kgf.<br>
@@ -48,13 +46,10 @@
 
 
   </p>
-  <h3>Results:</h3>
-  <p>The Tensile Strength of film sample is ------------- Kgf/cm<sup>2</sup> and Elongation at break of film sample is
-    -----------%</p>
 
-  <h2> Live Lab</h2>
 
-  <h3>==> Calculate tensile strength</h3>
+
+  <h3><strong>Calculate tensile strength</strong></h3>
 
   <form #f="ngForm" (ngSubmit)="calcTS()" novalidate>
     <div class="form-group row">
@@ -81,7 +76,7 @@
       </div>
     </div>
   </form>
-  <h3>==> Calcultae elongation</h3>
+  <h3><strong>Calculate elongation</strong></h3>
 
   <form #f2="ngForm" (ngSubmit)="calcEle()" novalidate>
     <div class="form-group row">
@@ -102,6 +97,8 @@
       </div>
     </div>
   </form>
-</body>
 
-</html>
+  <h3><strong>Results:</strong></h3>
+  <p>The Tensile Strength of film sample is {{ts}} Kgf/cm<sup>2</sup> and Elongation at break of film sample is
+    {{per}} %</p>
+</div>

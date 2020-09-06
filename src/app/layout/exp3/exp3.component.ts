@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class Exp3Component implements OnInit {
 
   data: any = {};
+  ts: any;
+  per: any
 
   constructor() { }
 
   ngOnInit(): void {
+    this.ts = "-----"
+    this.per = "-----"
   }
 
   calcTS() {

@@ -15,6 +15,7 @@ import { Exp4Component } from './layout/exp4/exp4.component';
 import { Exp3Component } from './layout/exp3/exp3.component';
 import { Exp2Component } from './layout/exp2/exp2.component';
 import { Exp1Component } from './layout/exp1/exp1.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Exp1Component } from './layout/exp1/exp1.component';
     Exp4Component,
     Exp3Component,
     Exp2Component,
-    Exp1Component
+    Exp1Component,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

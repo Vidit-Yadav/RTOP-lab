@@ -1,35 +1,33 @@
-<html>
-
-<body>
-    <h1>EXPERIMENT NO. 3</h1>
-    <h2>Object:</h2>
+<div class="body">
+    <h1><strong>EXPERIMENT NO. 3</strong></h1>
+    <h3><strong>Object:</strong></h3>
     <p>Determination of Tensile Strength and % elongation of plastic specimen of dumbbell</p>
-    <h3>Equipment: </h3>
+    <h3><strong>Equipment:</strong></h3>
     <ul>
         <li>Tensile testing Machine or UTM</li>
         <li>Thickness Gauge</li>
         <li>Vernier calipers</li>
 
     </ul>
-    <h3>Test Method:</h3>
+    <h3><strong>Test Method:</strong></h3>
     <p>
         ASTM D638 or ISO 527
     </p>
-    <h3>Significance:</h3>
+    <h3><strong>Signifi</strong>cance:</h3>
     <p>The ability to resist breaking under tensile stress is one of the most important and widely measured properties
         of materials used in structural applications. The force per unit area (MPa or psi) required to break a material
         in such a manner is the ultimate tensile strength or tensile strength at break . The rate at which a sample is
         pulled apart in the test can range from 0.2 to 20 inches per minute and will influence the results. The test
         standard to measure tensile properties in the ASTM system is ASTM D638 and in ISO system is ISO 527. </p>
-    <h3>Tensile Elongation:</h3>
+    <h3><strong>Tensile Elongation:</strong></h3>
     <p>The ultimate elongation of an engineering material is the percentage increase in length that occurs before it
         breaks under tension. Ultimate elongation values of several hundred percent are common for elastomers and
         film/packaging polyolefins. Rigid plastics, especially fiber reinforced ones, often exhibit values under 5%. The
         combination of high ultimate tensile strength and high elongation leads to materials of high toughness.</p>
-    <h3>Tensile Modulus of Elasticity:</h3>
+    <h3><strong>Tensile Modulus of Elasticity:</strong></h3>
     <p>The tensile modulus is the ratio of stress to elastic strain in tension. A high tensile modulus means that the
         material is rigid - more stress is required to produce a given amount of strain. </p>
-    <h3> Procedure:</h3>
+    <h3><strong> Procedure:</strong></h3>
     <ul>
         <li>The dumbbell sample is taken and its thickness is measured with the help of Vernier calipers in cm.</li>
         <li>Dumbel edges are clamped in fixed and movable grips on Tensile tester.</li>
@@ -40,8 +38,9 @@
 
     </ul>
 
-    <h3>
-        Calculations:
+    <h3><strong>
+            Calculations:
+        </strong>
     </h3>
     <p>The following formulae are used for calculation of tensile strength and % elongation :-</p>
     <p>Tensile strength ( Kgf/cm<sup>2</sup>) =W / (b x t)</p>
@@ -52,13 +51,8 @@
     </p>
     <p>L<sub>0</sub> = Initial length of film between the grips in cm.<br>
         L<sub>1</sub> =Final length of film between the grips in cm.</p>
-    <h3>Results: </h3>
-    <p>The Tensile Strength of polymer sample is ------------- Kgf/cm<sup>2</sup> and Elongation at break is
-        -----------%</p>
 
-    <h2> Live Lab</h2>
-
-    <h3>==> Calculate tensile strength</h3>
+    <h3><strong>Calculate tensile strength</strong></h3>
 
     <form #f="ngForm" (ngSubmit)="calcTS()" novalidate>
         <div class="form-group row">
@@ -85,7 +79,7 @@
             </div>
         </div>
     </form>
-    <h3>==> Calcultae elongation</h3>
+    <h3><strong>Calcultae elongation</strong></h3>
 
     <form #f2="ngForm" (ngSubmit)="calcEle()" novalidate>
         <div class="form-group row">
@@ -106,6 +100,8 @@
             </div>
         </div>
     </form>
-</body>
+    <h3><strong>Results: </strong></h3>
+    <p>The Tensile Strength of polymer sample is {{ts}} Kgf/cm<sup>2</sup> and Elongation at break is
+        {{per}} %</p>
 
-</html>
+</div>
