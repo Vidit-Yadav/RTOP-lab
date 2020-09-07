@@ -27,7 +27,7 @@ export class Exp3Component implements OnInit {
   }
   calcEle() {
     console.log("2");
-    let ans = (Math.abs(this.data.l0 - this.data.l1) / this.data.l0) * 100;
+    let ans = ((this.data.l1 - this.data.l0) / this.data.l0) * 100;
     ans = Math.round((ans + Number.EPSILON) * 100) / 100;
     alert("Elongation at break of film sample is " + ans + " %");
   }

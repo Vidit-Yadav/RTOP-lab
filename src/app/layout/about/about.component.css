@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+.body {
+    margin: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.row {
+    justify-content: center;
+}
+
+.content {
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}

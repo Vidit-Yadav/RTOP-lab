@@ -16,6 +16,8 @@ import { Exp3Component } from './layout/exp3/exp3.component';
 import { Exp2Component } from './layout/exp2/exp2.component';
 import { Exp1Component } from './layout/exp1/exp1.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { AboutComponent } from './layout/about/about.component';
+import { TeamComponent } from './layout/team/team.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     Exp3Component,
     Exp2Component,
     Exp1Component,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
