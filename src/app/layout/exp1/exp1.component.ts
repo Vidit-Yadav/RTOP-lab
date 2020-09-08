@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-exp1',
@@ -34,4 +34,17 @@ export class Exp1Component implements OnInit {
     this.per = ans;
     alert("Elongation at break of film sample is " + ans + " %");
   }
+  changeImage() {
+    var image: any = document.getElementById('loose sample');
+    if (image.src.match("bulbon")) {
+      image.src = "../../../assets/images/exp1/3.1.png";
+    } else {
+      image.src = "../../../assets/images/exp1/3.2.png";
+    }
+  }
+  myFunction() {
+    document.getElementById("vernier scale").innerHTML = "11.24 cm" + " is the gauge length measured by vernier callipers ";
+  }
+
 }
+

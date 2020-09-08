@@ -1,6 +1,4 @@
-<html>
-  <body>
-  <div class="body">
+<div class="body">
   <h1 class="title"><strong>EXPERIMENT NO. 1</strong></h1>
   <h3><strong>Object:</strong></h3>
   <p>Determination of Tensile Strength and Elongation at break of film sample.</p>
@@ -104,116 +102,84 @@
   <p>The Tensile Strength of film sample is {{ts}} Kgf/cm<sup>2</sup> and Elongation at break of film sample is
     {{per}} %</p>
 
-    <h3 class="subHead"><strong>Videos</strong></h3>
+
+  <h1><strong>Perform experiment</strong></h1>
+
+  <h3 class="subHead"><strong>Videos</strong></h3>
+  <div class="container">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe  width="720" height="400"  src="https://www.youtube.com/embed/5kzhZXMwojI" allowfullscreen frameborder="0"></iframe>
+      <iframe width="720" height="400" src="https://www.youtube.com/embed/5kzhZXMwojI" allowfullscreen
+        frameborder="0"></iframe>
     </div>
-</div>
+  </div>
 
+  <!-- demo -->
+  <h3 class="subHead"><strong>Step 1</strong></h3>
+  <p>cut Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples in length wise and cross wise
+    direction of film.</p>
+  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/1.0.jpg" alt="cutting of plastic films" width="375px">
 
-<!-- demo -->
-<h2>Perform experiment </h2>
-<h3>Step 1</h3>
-<p>cut Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples in length wise and cross wise direction of film.</p>
-<img src="1.0.jpg" alt="cutting of plastic films" width="375px">
-
-<h3>Step 2</h3>
-<p>
-  With the help of thickness gauge the thickness
-  is measured at various points and average thickness is considered. 
-</p> 
-<img src="2.1.png" alt="2.1" width="400px">
-<img src="2.2.png" alt="2.2" width="400px">
-<img src="2.3.png" alt="2.3" width="400px">
-<h2>average thickness :</h2>
-
-
-
-<p id="thickness">---- mm</p>
-
-<button type="button" onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
-
-<h3>Step 3</h3>
-<P>
-  Samples are placed and fixed at upper jaws of tensile
-  machine and movable jaws are moved up to fix the lower end of film
-</P>
-<!-- keep this image relatively bigger than other images to keep change clearly visible-->
-<img id="loose sample" onclick="changeImage()" src="3.1.png" width="600px">
-<button onclick="changeImage()" id="loose sample">Fix jaws
-
-</button>
-
-<p></p>
-
-<script>
-function changeImage() {
-  var image = document.getElementById('loose sample');
-  if (image.src.match("bulbon")) {
-    image.src = "3.1.png";
-  } else {
-    image.src = "3.2.png";
-  }
-}
-</script>
-
-<h3>Step 4</h3>
-<p>Initial length L<sub>0</sub> of film between the jaws is measured with the help of Vernier calipers
-</p>
-<img src="4.1.png" alt="gauge length" width="600px">
-
-<button onclick="myFunction()">show vernier scale reading</button>
-
-<p id="vernier scale">-----</p>
-
-
-<script>
-function myFunction() {
-  document.getElementById("vernier scale").innerHTML = "11.24 cm" +" is the gauge length measured by vernier callipers ";
-}
-</script>
+  <h3 class="subHead"><strong>Step 2</strong></h3>
+  <p>
+    With the help of thickness gauge the thickness
+    is measured at various points and average thickness is considered.
+  </p>
+  <img class="rounded mx-auto d-block" src="../../../assets//images//exp1/2.1.png" alt="2.1" width="400px">
+  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/2.2.png" alt="2.2" width="400px">
+  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/2.3.png" alt="2.3" width="400px">
+  <h3><strong>Average thickness :</strong></h3>
 
 
 
+  <p id="thickness">---- mm</p>
 
-<h3>Step 5</h3>
-The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.
+  <button type="button" class="btn btn-primary" onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
+
+  <h3 class="subHead"><strong>Step 3</strong></h3>
+  <P>
+    Samples are placed and fixed at upper jaws of tensile
+    machine and movable jaws are moved up to fix the lower end of film
+  </P>
+  <!-- keep this image relatively bigger than other images to keep change clearly visible-->
+  <img class="rounded mx-auto d-block" id="loose sample" onclick="changeImage()" src="../../../assets/images/exp1/3.1.png" width="600px">
+  <button class="btn btn-primary" (click)="changeImage()" >Fix jaws
+
+  </button>
+
+  <p></p>
+
+  <h3 class="subHead"><strong>Step 4</strong></h3>
+  <p>Initial length L<sub>0</sub> of film between the jaws is measured with the help of Vernier calipers
+  </p>
+  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/4.1.png" alt="gauge length" width="600px">
+
+  <button class="btn btn-primary" (click)="myFunction()">show vernier scale reading</button>
+
+  <p id="vernier scale">-----</p>
+
+  <h3><strong>Step 5</strong></h3>
+  The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.
 
 
-<div>
-  <button onclick="playPause()">Run/Stop Machine</button> 
-  <video id="video1" width="420">
-  <source src="jaw.mp4" type="video/mp4">    Your browser does not support HTML video.
-  </video>
-  <script>
-    var myVideo = document.getElementById("video1"); 
+  <div>
+    <video id="video1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none"
+      poster='http://video-js.zencoder.com/oceans-clip.jpg'
+      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+      <source src="../../../assets/videos/exp1/jaw.mp4" type='video/mp4' />
+    </video>
+  </div>
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+  <h3><strong>Step 6</strong></h3>
+  <p>At the breaking of sample, the reading of load in Kgf noted and final length L<sub>1</sub> between the jaws is
+    measured</p>
 
-  </script>
+  <p id="readings">---</p>
+  <button class="btn btn-primary" type="button" onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
+    Final length
+  </button>
 
+  <p id="load">---</p>
+  <button class="btn btn-primary" type="button" onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
+    Tensile load</button>
 
 </div>
-
-<h3>Step 6</h3>
-<p>At the breaking of sample, the reading of load in Kgf noted and final length L<sub>1</sub> between the jaws is measured</p>
-
-<p id="readings" >---</p>
-<button type="button" onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
-  Final length
-</button>
-
-<p id="load" >---</p>
-<button type="button" onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
-Tensile load</button>
-
-
-
-
-</body>
-</html>
