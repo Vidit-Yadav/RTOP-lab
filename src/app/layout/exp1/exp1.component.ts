@@ -10,13 +10,14 @@ export class Exp1Component implements OnInit {
   data: any = {};
   ts: any;
   per: any
-
+  video;
   constructor() {
   }
 
   ngOnInit(): void {
     this.ts = "-----";
     this.per = "-----"
+    this.video = document.getElementById('video1') as HTMLVideoElement;
   }
 
   calcTS() {
@@ -46,5 +47,18 @@ export class Exp1Component implements OnInit {
     document.getElementById("vernier scale").innerHTML = "11.24 cm" + " is the gauge length measured by vernier callipers ";
   }
 
+  play() {
+    this.video.play();
+  }
+
+  pause() {
+    this.video.pause();
+  }
+
+  reRun() {
+    this.pause();
+    this.video.currentTime = 0;
+    this.play();
+  }
 }
 

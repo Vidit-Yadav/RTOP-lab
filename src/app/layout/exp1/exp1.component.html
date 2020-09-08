@@ -117,7 +117,8 @@
   <h3 class="subHead"><strong>Step 1</strong></h3>
   <p>cut Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples in length wise and cross wise
     direction of film.</p>
-  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/1.0.jpg" alt="cutting of plastic films" width="375px">
+  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/1.0.jpg" alt="cutting of plastic films"
+    width="375px">
 
   <h3 class="subHead"><strong>Step 2</strong></h3>
   <p>
@@ -133,7 +134,8 @@
 
   <p id="thickness">---- mm</p>
 
-  <button type="button" class="btn btn-primary" onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
+  <button type="button" class="btn btn-primary"
+    onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
 
   <h3 class="subHead"><strong>Step 3</strong></h3>
   <P>
@@ -141,8 +143,9 @@
     machine and movable jaws are moved up to fix the lower end of film
   </P>
   <!-- keep this image relatively bigger than other images to keep change clearly visible-->
-  <img class="rounded mx-auto d-block" id="loose sample" onclick="changeImage()" src="../../../assets/images/exp1/3.1.png" width="600px">
-  <button class="btn btn-primary" (click)="changeImage()" >Fix jaws
+  <img class="rounded mx-auto d-block" id="loose sample" onclick="changeImage()"
+    src="../../../assets/images/exp1/3.1.png" width="600px">
+  <button class="btn btn-primary" (click)="changeImage()">Fix jaws
 
   </button>
 
@@ -162,11 +165,22 @@
 
 
   <div>
-    <video id="video1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none"
-      poster='http://video-js.zencoder.com/oceans-clip.jpg'
-      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
-      <source src="../../../assets/videos/exp1/jaw.mp4" type='video/mp4' />
-    </video>
+    <div class="container">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="video1"  width="640px" height="267px"  preload="metadata"
+          poster='../../../assets/images/./exp1/3.1.png'
+          data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+          <source src="../../../assets/videos/exp1/jaw.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary" (click)="play()" id="play">Run Machine</button>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <button class="btn btn-primary" (click)="pause()" id="pause">Stop Machine</button>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <button class="btn btn-primary" (click)="reRun()" id="pause">Re-run machine</button>
+    </div>
   </div>
 
   <h3><strong>Step 6</strong></h3>
@@ -174,12 +188,14 @@
     measured</p>
 
   <p id="readings">---</p>
-  <button class="btn btn-primary" type="button" onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
+  <button class="btn btn-primary" type="button"
+    onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
     Final length
   </button>
 
   <p id="load">---</p>
-  <button class="btn btn-primary" type="button" onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
+  <button class="btn btn-primary" type="button"
+    onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
     Tensile load</button>
 
 </div>

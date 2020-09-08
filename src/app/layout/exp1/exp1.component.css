@@ -8,3 +8,7 @@
 .content {
     left: 100px;
 }
+
+.row {
+    justify-content: center;
+}
