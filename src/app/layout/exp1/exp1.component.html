@@ -1,8 +1,8 @@
 <div class="body">
-  <h1 class="title"><strong>EXPERIMENT NO. 1</strong></h1>
-  <h3><strong>Object:</strong></h3>
+  <h1 class="title text-center"><strong>EXPERIMENT NO. 1</strong></h1>
+  <h3 class="subHead"><strong>Object:</strong></h3>
   <p>Determination of Tensile Strength and Elongation at break of film sample.</p>
-  <h3><strong>Equipment</strong></h3>
+  <h3 class="subHead"><strong>Equipment</strong></h3>
   <ul>
     <li>Tensile testing Machine or UTM</li>
     <li>Thickness Gauge</li>
@@ -10,14 +10,14 @@
 
   </ul>
 
-  <h3><strong>Significance:</strong></h3>
+  <h3 class="subHead"><strong>Significance:</strong></h3>
   <p>The tensile modulus of elasticity is an index of the stiffness of plastic films and can be used to compare the
     stiffness of different materials. The tensile energy to break (TEB) is the total energy absorbed per unit volume
     of the specimen up to the point of rupture and can be considered as a measure of toughness. Ultimate elongation
     values of several hundred percent are common for polymer films. The rate of strain, specimen parameters, and
     especially flaws may cause large variations in the results. In that sense, caution is advised in utilizing TEB
     test results for end-use design applications</p>
-  <h3><strong>Procedure:</strong></h3>
+  <h3 class="subHead"><strong>Procedure:</strong></h3>
   <ul>
     <li>Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples are cut in length wise and cross
       wise direction of film. 5 samples in each direction are taken.</li>
@@ -32,7 +32,7 @@
 
   </ul>
 
-  <h3><strong>Calculations:</strong></h3>
+  <h3 class="subHead"><strong>Calculations:</strong></h3>
   <p>The following formulae are used for calculation of tensile strength and % elongation:-</p>
   <p>Tensile Strength ( Kgf/cm<sup>2</sup> ) = W / ( b x t )</p>
   <p>W = Load in Kgf.<br>
@@ -49,7 +49,7 @@
 
 
 
-  <h3><strong>Calculate tensile strength</strong></h3>
+  <h3 class="subHead"><strong>Calculate tensile strength</strong></h3>
 
   <form #f="ngForm" (ngSubmit)="calcTS()" novalidate>
     <div class="form-group row">
@@ -72,11 +72,11 @@
     </div>
     <div class="form-group row">
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Calculate</button>
+        <button type="submit" class="btn btn-primary btn-border">Calculate</button>
       </div>
     </div>
   </form>
-  <h3><strong>Calculate elongation</strong></h3>
+  <h3 class="subHead"><strong>Calculate elongation</strong></h3>
 
   <form #f2="ngForm" (ngSubmit)="calcEle()" novalidate>
     <div class="form-group row">
@@ -93,17 +93,17 @@
     </div>
     <div class="form-group row">
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Calculate</button>
+        <button type="submit" class="btn btn-primary btn-border">Calculate</button>
       </div>
     </div>
   </form>
 
-  <h3><strong>Results:</strong></h3>
+  <h3 class="subHead"><strong>Results:</strong></h3>
   <p>The Tensile Strength of film sample is {{ts}} Kgf/cm<sup>2</sup> and Elongation at break of film sample is
     {{per}} %</p>
 
 
-  <h1><strong>Perform experiment</strong></h1>
+  <h1 class="subHead text-center"><strong>Perform experiment</strong></h1>
 
   <h3 class="subHead"><strong>Videos</strong></h3>
   <div class="container">
@@ -113,61 +113,68 @@
     </div>
   </div>
 
-  <!-- demo -->
   <h3 class="subHead"><strong>Step 1</strong></h3>
-  <p>cut Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples in length wise and cross wise
-    direction of film.</p>
-  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/1.0.jpg" alt="cutting of plastic films"
-    width="375px">
+  <div>
+    <p style="margin-left: 2vw;">cut Rectangular sample of dimensions 2.54cm width and 15.24 cm length samples in length wise and cross wise
+      direction of film.</p>
+    <img class="rounded mx-auto d-block img-fluid" src="../../../assets/images/exp1/1.0.jpg"
+      alt="cutting of plastic films" width="375px">
 
-  <h3 class="subHead"><strong>Step 2</strong></h3>
-  <p>
-    With the help of thickness gauge the thickness
-    is measured at various points and average thickness is considered.
-  </p>
-  <img class="rounded mx-auto d-block" src="../../../assets//images//exp1/2.1.png" alt="2.1" width="400px">
-  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/2.2.png" alt="2.2" width="400px">
-  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/2.3.png" alt="2.3" width="400px">
-  <h3><strong>Average thickness :</strong></h3>
+    <h3 class="subHead"><strong>Step 2</strong></h3>
+    <p style="margin-left: 2vw;">
+      With the help of thickness gauge the thickness
+      is measured at various points and average thickness is considered.
+    </p>
+    <img class="rounded mx-auto d-block img-fluid" src="../../../assets//images//exp1/2.1.png" alt="2.1" width="400px">
+    <img class="rounded mx-auto d-block img-fluid" src="../../../assets/images/exp1/2.2.png" alt="2.2" width="400px">
+    <img class="rounded mx-auto d-block img-fluid" src="../../../assets/images/exp1/2.3.png" alt="2.3" width="400px">
+    <h3 class="subHead"><strong>Average thickness :</strong></h3>
 
 
 
-  <p id="thickness">---- mm</p>
+    <p id="thickness" style="margin-left: 2vw;">---- mm</p>
 
-  <button type="button" class="btn btn-primary"
-    onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
+    <button type="button" class="btn btn-primary btn-border"
+      onclick='document.getElementById("thickness").innerHTML = "0.10 mm" '>calculate </button>
+
+  </div>
 
   <h3 class="subHead"><strong>Step 3</strong></h3>
-  <P>
-    Samples are placed and fixed at upper jaws of tensile
-    machine and movable jaws are moved up to fix the lower end of film
-  </P>
-  <!-- keep this image relatively bigger than other images to keep change clearly visible-->
-  <img class="rounded mx-auto d-block" id="loose sample" onclick="changeImage()"
-    src="../../../assets/images/exp1/3.1.png" width="600px">
-  <button class="btn btn-primary" (click)="changeImage()">Fix jaws
+  <div>
+    <p style="margin-left: 2vw;">
+      Samples are placed and fixed at upper jaws of tensile
+      machine and movable jaws are moved up to fix the lower end of film
+  </p>
+    <!-- keep this image relatively bigger than other images to keep change clearly visible-->
+    <img class="rounded mx-auto d-block img-fluid" id="loose sample" onclick="changeImage()"
+      src="../../../assets/images/exp1/3.1.png" width="600px">
+    <div class="text-center">
+      <button class="btn btn-primary btn-border" (click)="changeImage()">Fix jaws</button>
 
-  </button>
-
-  <p></p>
+    </div>
+    <p></p>
+  </div>
 
   <h3 class="subHead"><strong>Step 4</strong></h3>
-  <p>Initial length L<sub>0</sub> of film between the jaws is measured with the help of Vernier calipers
-  </p>
-  <img class="rounded mx-auto d-block" src="../../../assets/images/exp1/4.1.png" alt="gauge length" width="600px">
-
-  <button class="btn btn-primary" (click)="myFunction()">show vernier scale reading</button>
-
-  <p id="vernier scale">-----</p>
-
-  <h3><strong>Step 5</strong></h3>
-  The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.
-
-
   <div>
+    <p style="margin-left: 2vw;">Initial length L<sub>0</sub> of film between the jaws is measured with the help of Vernier calipers
+    </p>
+    <img class="rounded mx-auto d-block img-fluid" src="../../../assets/images/exp1/4.1.png" alt="gauge length"
+      width="600px">
+
+    <p id="vernier scale" class="btn-border">-----</p>
+    <div class="text-left">
+      <button class="btn btn-primary btn-border"  style="margin-top: 1vh;" (click)="myFunction()">show vernier scale reading</button>
+
+    </div>
+  </div>
+
+  <h3 class="subHead"><strong>Step 5</strong></h3>
+  <div>
+    <p style="margin-left: 2vw;">The stretching speed is fixed on the machine and the movable jaw is moved down at constant speed.</p>
     <div class="container">
       <div class="embed-responsive embed-responsive-16by9">
-        <video id="video1"  width="640px" height="267px"  preload="metadata"
+        <video id="video1" width="640px" height="267px" preload="metadata"
           poster='../../../assets/images/./exp1/3.1.png'
           data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
           <source src="../../../assets/videos/exp1/jaw.mp4" type='video/mp4' />
@@ -175,27 +182,32 @@
       </div>
     </div>
     <div class="row">
-      <button class="btn btn-primary" (click)="play()" id="play">Run Machine</button>
+      <button class="btn btn-primary btn-border" (click)="play()" id="play">Run Machine</button>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-      <button class="btn btn-primary" (click)="pause()" id="pause">Stop Machine</button>
+      <button class="btn btn-primary btn-border" (click)="pause()" id="pause">Stop Machine</button>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-      <button class="btn btn-primary" (click)="reRun()" id="pause">Re-run machine</button>
+      <button class="btn btn-primary btn-border" (click)="reRun()" id="pause">Re-run machine</button>
     </div>
   </div>
 
-  <h3><strong>Step 6</strong></h3>
-  <p>At the breaking of sample, the reading of load in Kgf noted and final length L<sub>1</sub> between the jaws is
-    measured</p>
+  <h3 class="subHead"><strong>Step 6</strong></h3>
 
-  <p id="readings">---</p>
-  <button class="btn btn-primary" type="button"
-    onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
-    Final length
-  </button>
+  <div>
+    <p style="margin-left: 2vw;">At the breaking of sample, the reading of load in Kgf noted and final length L<sub>1</sub> between the jaws is
+      measured</p>
 
-  <p id="load">---</p>
-  <button class="btn btn-primary" type="button"
-    onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
-    Tensile load</button>
+    <p id="readings" class="btn-border">---</p>
+    <button class="btn btn-primary btn-border" type="button" style="margin-top: 1vw;"
+      onclick='document.getElementById("readings").innerHTML= "Final legth : 15.85 cm" '>
+      Final length
+    </button>
+
+
+    <p id="load" class="btn-border">---</p>
+    <button class="btn btn-primary btn-border" type="button" style="margin-top: 1vh;"
+      onclick='document.getElementById("load").innerHTML= "tenile load : 0.889" '>
+      Tensile load</button>
+
+  </div>
 
 </div>

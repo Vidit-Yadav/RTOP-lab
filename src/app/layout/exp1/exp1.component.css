@@ -9,6 +9,16 @@
     left: 100px;
 }
 
+.subHead {
+    margin-top: 5vh;
+}
+
 .row {
     justify-content: center;
+}
+
+.btn-border {
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
 }
